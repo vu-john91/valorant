@@ -1,5 +1,6 @@
 import './Card.css';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function hexToRgba(hex) {
   let bigint = parseInt(hex, 16);
@@ -10,7 +11,7 @@ function hexToRgba(hex) {
   return `rgba(${r},${g},${b},${a})`;
 }
 
-const Card = ({ role, backgroundGradientColors, backgroundUrl, image, title, description, id, deleteIdea }) => {
+const Card = ({ role, backgroundGradientColors, image, title, description, id }) => {
   
   const gradientColors = backgroundGradientColors.map(color => hexToRgba(color));
 
@@ -29,3 +30,12 @@ const Card = ({ role, backgroundGradientColors, backgroundUrl, image, title, des
   )
   }
   export default Card;
+
+Card.propTypes = {
+    role: PropTypes.string.isRequired,
+    backgroundGradientColors: PropTypes.arrayOf(PropTypes.string).isRequired,
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    id: PropTypes.string.isRequired,
+  };
