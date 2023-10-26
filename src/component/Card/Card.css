@@ -1,5 +1,10 @@
 /* Card.css */
 
+@keyframes slideIn {
+  0%   {opacity: 0; transform: translateX(-500px);}
+  100% {opacity: 1; transform: translateX(0);}
+}
+
 .card {
     box-sizing: border-box;
     border: 3px solid rgb(168, 48, 48);
@@ -14,7 +19,7 @@
     justify-content: space-between; /* space out the children */
     align-items: center;
     height: 100%;
-    
+    animation: slideIn 0.3s forwards;
   }
 
   .card-description {
