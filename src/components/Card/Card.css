@@ -1,0 +1,114 @@
+/* Card.css */
+@keyframes slideIn {
+  0%   {opacity: 0; transform: translateX(-500px);}
+  100% {opacity: 1; transform: translateX(0);}
+}
+
+.card {
+    box-sizing: border-box;
+    border: 3px solid rgb(168, 48, 48);
+    padding: 30px;
+    background-size: cover; /* ensure the background image covers the card */
+    background-repeat: no-repeat; /* prevent the background image from repeating */
+    background-position: center; /* center the background image */
+    background: linear-gradient(45deg, rgba(173, 157, 157, 0.5), rgba(145, 40, 40, 0.5), rgba(173, 157, 157, 0.5));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    justify-content: space-between; /* space out the children */
+    align-items: center;
+    height: 100%;
+    opacity: 0;
+    animation: slideIn 0.3s forwards;
+  }
+
+  .card-description {
+    height: auto; /* set a specific height, adjust as needed */
+    overflow: hidden; /* hide excess text */
+}
+
+.card-button {
+    align-self: center; /* center the button horizontally */
+    margin-top: auto; /* push the button to the bottom */
+    text-decoration: none;
+}
+
+.card-button:hover {
+  border: 3px solid rgb(251, 251, 251);
+  border-radius: 30px;
+}
+
+.card-button:active {
+  transform: scale(0.95); /* This makes the button shrink a bit when clicked */
+}
+
+.agent-image {
+  /* width: 225px;  /* or whatever size you prefer */
+  /*height: 225px; */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* ensures the image covers the area without distortion */
+  object-position: center; /* centers the image within the frame */
+  border-radius: 30px;
+  border: 3px solid rgb(168, 48, 48);
+}
+
+  /* Text Background */
+.card h3, .card p {
+  background-color: rgba(26, 15, 15, 0.5); /* black with 50% opacity */
+  padding: 5px; /* giving a little space around the text */
+  border-radius: 5px; /* optional, to give rounded corners */
+  border: 3px solid rgb(67, 163, 200);
+}
+
+/* Text Color */
+.card h3, .card p {
+  color: #40b2e3;
+}
+
+/* Text Shadow */
+.card h3, .card p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Font Weight & Size */
+.card h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.card p {
+  font-size: 1.1em;
+}
+
+/* Line Spacing */
+.card p {
+  line-height: 1.4;
+}
+
+
+@media (max-width: 667px) {
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .agent-image {
+    max-width: 40%;
+    height: auto;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    border: 3px solid rgb(168, 48, 48);
+  }
+
+  .card-description {
+    height: auto; /* set a specific height, adjust as needed */
+    margin: 5px
+  }
+
+  h3, .card-role {
+    margin: 5px
+  }
+}
