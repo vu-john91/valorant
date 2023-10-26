@@ -34,7 +34,7 @@ function App(){
 
     const getAllAgents = async () => {
       try {
-        const response = await fetch("https://valorant-api.com/v1/agents");
+        const response = await fetch("https://valorant-api.com/v1/agents?isPlayableCharacter=true");
         const data = await handleErrors(response);
         setAllAgents(data.data);
         setFilteredAgents(data.data); // <-- Move this line here
