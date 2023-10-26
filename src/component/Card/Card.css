@@ -18,7 +18,7 @@
   }
 
   .card-description {
-    height: 100px; /* set a specific height, adjust as needed */
+    height: auto; /* set a specific height, adjust as needed */
     overflow: hidden; /* hide excess text */
 }
 
