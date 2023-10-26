@@ -131,7 +131,7 @@ h2 {
   }
 
   .agent-portait {
-    width: 265px;  /* or whatever size you prefer */
+    width: 270px;  /* or whatever size you prefer */
     height: 400px;
     object-fit: cover; /* ensures the image covers the area without distortion */
     object-position: center; /* centers the image within the frame */
