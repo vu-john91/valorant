@@ -41,7 +41,7 @@ function AgentDetails({ addToSavedList }) {
 
 
   return (
-    <div id={agentDetails.uuid}>
+    <div class='agent-page' id={agentDetails.uuid}>
       <h1 class='agentName'>{agentDetails.displayName}</h1>
         <div className='agent-card'>
           <img class='agent-portait' src={agentDetails.fullPortrait} alt={agentDetails.displayName} />
