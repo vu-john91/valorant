@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import './AgentDetails.css';
+import PropTypes from 'prop-types';
 
 function AgentDetails({ addToSavedList }) {
   let { agentId } = useParams();
@@ -75,3 +76,6 @@ function AgentDetails({ addToSavedList }) {
 }
 
 export default AgentDetails;
+AgentDetails.propTypes = {
+  addToSavedList: PropTypes.func.isRequired
+};
