@@ -1,0 +1,42 @@
+/* Form.css */
+
+form {
+  margin: auto;
+}
+
+h2 {
+  margin: 5px;
+}
+  
+select, button {
+  display: inline-block;
+  padding: 3px;
+  margin: 10px;
+  background-color: #9c7070; /* Example color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid rgb(222, 210, 210);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+button:hover {
+  background-color: #a04545;
+}
+
+button:active {
+  background-color: #004085;
+  transform: scale(0.95); /* This makes the button shrink a bit when clicked */
+}
+
+.form-bar {
+  box-sizing: border-box;
+  border: 3px solid rgb(168, 48, 48);
+  padding: 1px;
+  background: linear-gradient(45deg, rgba(173, 157, 157, 0.5), rgba(145, 40, 40, 0.5), rgba(173, 157, 157, 0.5));
+  border-radius: 30px;
+}
