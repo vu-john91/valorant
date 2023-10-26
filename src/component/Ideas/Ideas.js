@@ -10,7 +10,7 @@ function Ideas({ ideas, savedAgents}){
     return <div><em>You have not saved anything to your favorties.</em></div>;
   }
   
-  const ideaCards = agentsToDisplay.map(idea => {
+  const ideaCards = agentsToDisplay.map((idea, index) => {
     return (
       <Card
         backgroundGradientColors={idea.backgroundGradientColors}
@@ -21,7 +21,7 @@ function Ideas({ ideas, savedAgents}){
         description={idea.description}
         id={idea.uuid}
         key={idea.uuid}
-        //saveAgent={saveAgent}
+        index={index}
       />
     )
   })
