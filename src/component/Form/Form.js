@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import './Form.css';
+import PropTypes from 'prop-types';
 
 function Form({ addIdea }){
   const [title, setTitle] = useState("");
@@ -35,3 +36,7 @@ return (
 }
 
 export default Form;
+
+Form.propTypes = {
+  addIdea: PropTypes.func.isRequired
+};
