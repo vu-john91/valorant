@@ -20,7 +20,7 @@ const Card = ({ role, backgroundGradientColors, image, title, description, id })
   
   return (
     <Link to={`/details/${id}`} className="card-button"> {/* Corrected this line */}
-      <div className='card' id={id}>
+      <div className='card' style={{ animationDelay: `${index * 0.1}s` }} id={id}>
         <img class='agent-image' src={image} alt={title} />
         <h3>{title}</h3>
         <p class='card-role'>{role}</p>
@@ -38,4 +38,5 @@ Card.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string,
     id: PropTypes.string.isRequired,
+    index: PropTypes.number.isRequired,
   };
