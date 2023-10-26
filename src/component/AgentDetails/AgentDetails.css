@@ -47,11 +47,6 @@
     margin-right: 10px
   }
 
-  .role-description {
-    
-    /* width: 500px; */
-    overflow: hidden; /* hide excess text */
-}
 .agent-role {
    /* set a specific height, adjust as needed */
   width: 500px;
@@ -167,15 +162,20 @@ h2 {
 
    .description-card, .role-card{
     max-width: 200px;
-    height: 65px;
+    height: auto;
   }
 
   .agent-role, .role-description {
     /* set a specific height, adjust as needed */
     max-width: 200px;
-    height: 20px;
+    height: auto;
     margin-top: 6px
+ }
 
+.agent-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
  }
 
 }
