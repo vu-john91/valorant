@@ -5,8 +5,6 @@ import './Form.css';
 import PropTypes from 'prop-types';
 
 function Form({ addIdea }){
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
   const [selectedRole, setSelectedRole] = useState("");
 
 
