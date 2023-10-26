@@ -131,8 +131,8 @@ h2 {
   }
 
   .agent-portait {
-    width: 200px;  /* or whatever size you prefer */
-    height: 300px;
+    width: 250px;  /* or whatever size you prefer */
+    height: 400px;
     object-fit: cover; /* ensures the image covers the area without distortion */
     object-position: center; /* centers the image within the frame */
     border-radius: 30px;
@@ -159,11 +159,7 @@ h2 {
      /* hide excess text */
     display: flex;
     flex-direction: column;
-    
-    
    }
-
-
    .description-card, .role-card{
     max-width: 200px;
     height: auto;
