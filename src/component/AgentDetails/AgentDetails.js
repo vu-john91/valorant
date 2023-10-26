@@ -76,6 +76,7 @@ function AgentDetails({ addToSavedList }) {
 }
 
 export default AgentDetails;
+
 AgentDetails.propTypes = {
   addToSavedList: PropTypes.func.isRequired
 };
