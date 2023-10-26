@@ -3,6 +3,10 @@
 form {
     margin: auto;
   }
+
+h2 {
+    margin: 5px;
+  }
   
   select, button {
     display: inline-block;
