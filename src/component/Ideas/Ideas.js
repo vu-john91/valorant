@@ -1,5 +1,6 @@
 import './Ideas.css';
 import Card from "../Card/Card"
+import PropTypes from 'prop-types';
 
 
 function Ideas({ ideas, savedAgents}){
@@ -27,3 +28,8 @@ function Ideas({ ideas, savedAgents}){
   )
 }
 export default Ideas;
+
+Ideas.propTypes = {
+  ideas: PropTypes.array,
+  savedAgents: PropTypes.array
+};
