@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 
 function Ideas({ ideas, savedAgents}){
   const agentsToDisplay = savedAgents || ideas;
-  
+
   if (!agentsToDisplay.length) {
-    return <div><em>You have not saved anything to your favorties.</em></div>;
+    return <div><em>You have not saved anything to your favorites.</em></div>;
   }
-  
+
   const ideaCards = agentsToDisplay.map((idea, index) => {
     return (
       <Card
