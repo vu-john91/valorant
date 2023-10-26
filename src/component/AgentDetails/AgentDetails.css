@@ -11,6 +11,7 @@
   }
 }
 
+
 .agentName {
   box-sizing: border-box;
   border: 3px solid rgb(168, 48, 48);
@@ -59,6 +60,7 @@
     border: 3px solid rgb(67, 163, 200);
     margin-right: 10px
   }
+
 
 .agent-role {
    /* set a specific height, adjust as needed */
@@ -172,7 +174,9 @@ h2 {
      /* hide excess text */
     display: flex;
     flex-direction: column;
+    
    }
+
    .description-card, .role-card{
     max-width: 200px;
     height: auto;
@@ -182,10 +186,10 @@ h2 {
     /* set a specific height, adjust as needed */
     max-width: 200px;
     height: auto;
-    margin-top: 6px
+    margin-top: 6px;
  }
 
-.agent-page {
+ .agent-page {
   display: flex;
   flex-direction: column;
   align-items: center;
