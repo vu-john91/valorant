@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.03912160.css",
+    "main.js": "/static/js/main.a5f1f188.js",
+    "static/js/787.384975f3.chunk.js": "/static/js/787.384975f3.chunk.js",
+    "static/media/valorant-background.png": "/static/media/valorant-background.9f859b5ab9b3299803cc.png",
+    "index.html": "/index.html",
+    "main.03912160.css.map": "/static/css/main.03912160.css.map",
+    "main.a5f1f188.js.map": "/static/js/main.a5f1f188.js.map",
+    "787.384975f3.chunk.js.map": "/static/js/787.384975f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03912160.css",
+    "static/js/main.a5f1f188.js"
+  ]
+}
