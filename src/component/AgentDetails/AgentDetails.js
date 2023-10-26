@@ -59,7 +59,7 @@ function AgentDetails({ addToSavedList }) {
               <div class='abilities-card'>
                 <ul className='ability-details'>
                   {agentDetails.abilities.map((ability) => (
-                    <div key={ability.slot}>
+                    <div class='ability-slots' key={ability.slot}>
                       <img class='ability-icon' src={ability.displayIcon} alt={ability.displayName} />
                       <h3 class='ability-name'>{ability.displayName}</h3>
                       <p class='ability-description'>{ability.description}</p>
