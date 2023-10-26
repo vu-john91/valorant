@@ -7,7 +7,7 @@ function Ideas({ ideas, savedAgents}){
   const agentsToDisplay = savedAgents || ideas;
   
   if (!agentsToDisplay.length) {
-    return <div><em>You have not saved anything.</em></div>;
+    return <div><em>You have not saved anything to your favorties.</em></div>;
   }
   
   const ideaCards = agentsToDisplay.map(idea => {
