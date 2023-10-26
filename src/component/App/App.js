@@ -6,10 +6,8 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-
 function App(){
   const [agents, setAllAgents] = useState([]);
-  const [singleAgent, setSingleAgent] = useState(null);
   const [error, setError] = useState(null);
   const [filteredAgents, setFilteredAgents] = useState([]);
   const [savedAgents, setSavedAgents] = useState([]);
@@ -60,37 +58,37 @@ function App(){
     }
 }
 
-  return (
-    <Router>
-      <main className='App'>
-      <div class='heading'>
-        <div>
-          <h1>Valorant Agents</h1>
-          <h2>Choose an Agent</h2>
-        </div>
+return (
+  <Router>
+    <main className='App'>
+    <div class='heading'>
+      <div>
+        <h1>Valorant Agents</h1>
+        <h2>Choose an Agent</h2>
       </div>
-      <div class='home'>
-      <Link to="/" className="home-button">Home</Link>
-      <Link to="/saved" className="favorites-button">Favorites</Link>
-      </div>
+    </div>
+    <div class='home'>
+    <Link to="/" className="home-button">Home</Link>
+    <Link to="/saved" className="favorites-button">Favorites</Link>
+    </div>
 
 
-        {/* Render the Form only if we're on the home route */}
-        
-        <Routes>
-        <Route path="/" element={
-          <>
-            <Form addIdea={filterAgentsByRole} />
-            <Ideas ideas={filteredAgents} />
-          </>
-        }/>
-          <Route path="/details/:agentId" element={<AgentDetails addToSavedList={addToSavedList} />} />
-          <Route path="/saved" element={<Ideas savedAgents={savedAgents} />} />
+      {/* Render the Form only if we're on the home route */}
+      
+      <Routes>
+      <Route path="/" element={
+        <>
+          <Form addIdea={filterAgentsByRole} />
+          <Ideas ideas={filteredAgents} />
+        </>
+      }/>
+        <Route path="/details/:agentId" element={<AgentDetails addToSavedList={addToSavedList} />} />
+        <Route path="/saved" element={<Ideas savedAgents={savedAgents} />} />
 
-        </Routes>
-      </main>
-    </Router>
-  );
+      </Routes>
+    </main>
+  </Router>
+);
 }
 
 export default App;
