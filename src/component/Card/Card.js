@@ -11,7 +11,7 @@ function hexToRgba(hex) {
   return `rgba(${r},${g},${b},${a})`;
 }
 
-const Card = ({ role, backgroundGradientColors, image, title, description, id }) => {
+const Card = ({ index, role, backgroundGradientColors, image, title, description, id }) => {
   
   const gradientColors = backgroundGradientColors.map(color => hexToRgba(color));
 
