@@ -44,13 +44,20 @@ function App(){
   }, []);
 
   function filterAgentsByRole(role) {
-    if (role === "") {
-      setFilteredAgents(agents); // reset to original list
-    } else {
-      const agentsToFilter = agents.filter(agent => agent.role?.displayName === role);
-      setFilteredAgents(agentsToFilter);
-    }
+  if (role === "") {
+    setFilteredAgents([]); // temporarily set to an empty array
+    setTimeout(() => {
+      setFilteredAgents(agents); // reset to original list after a slight delay
+    }, 10); 
+  } else {
+    const agentsToFilter = agents.filter(agent => agent.role?.displayName === role);
+    setFilteredAgents([]); // temporarily set to an empty array
+    setTimeout(() => {
+      setFilteredAgents(agentsToFilter); // set filtered agents after a slight delay
+    }, 10);
   }
+}
+
 
   function addToSavedList(agent) {
     if (!savedAgents.some(savedAgent => savedAgent.uuid === agent.uuid)) { // Avoid duplicates
