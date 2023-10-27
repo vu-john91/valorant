@@ -138,3 +138,42 @@
     margin: 5px
   }
 }
+
+@media (min-width: 1180px) {
+  .card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .agent-image {
+    max-width: 40%;
+    height: auto;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    border: 3px solid rgb(168, 48, 48);
+  }
+
+  .card-description {
+    height: auto; /* set a specific height, adjust as needed */
+    margin: 5px
+  }
+
+  h3, .card-role {
+    margin: 5px
+  }
+}
+
+@media (min-width: 1920px) {
+  .card {
+    width: 600px;
+    height: 500px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    justify-content: space-evenly; /* space out the children */
+    align-items: center;
+    
+  }
+}
