@@ -58,7 +58,8 @@
     object-position: center; /* centers the image within the frame */
     border-radius: 30px;
     border: 3px solid rgb(67, 163, 200);
-    margin-right: 10px
+    margin-right: 10px;
+    margin-top: 10px;
   }
 
 
@@ -133,11 +134,12 @@ h2 {
   margin: 6px
 }
 
+.agent-left {
+  display: flex;
+  flex-direction: column;
+}
 
-
-
-
-@media (max-width: 667px) {
+@media (min-width: 375px) {
   .agent-card{
     width: 375px;
     height: auto;
@@ -194,5 +196,249 @@ h2 {
   flex-direction: column;
   align-items: center;
  }
+}
 
+@media (min-width: 820px) {
+  .agent-card{
+    width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .agent-portait {
+    width: 370px;  /* or whatever size you prefer */
+    height: 500px;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    border: 3px solid rgb(67, 163, 200);
+    margin-bottom: 10px
+  }
+
+  .agent-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ability-icon {
+    width: 65px;  /* or whatever size you prefer */
+    height: 65px;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    border: 3px solid rgb(168, 48, 48);
+  }
+
+  .ability-details {
+    width: 670px;
+    display: flex;
+    flex-direction: column;
+    
+   }
+
+   .description-card, .role-card{
+    max-width: 700px;
+    height: auto;
+  }
+
+  .agent-role, .role-description {
+    /* set a specific height, adjust as needed */
+    max-width: 700px;
+    height: auto;
+    margin-top: 6px;
+ }
+
+ .agent-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+}
+
+@media (min-width: 1180px) {
+  .agent-card{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    justify-content: space-evenly; /* space out the children */
+    align-items: center;
+  }
+
+  .agent-portait {
+    width: 250px;  /* or whatever size you prefer */
+    height: 350px;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    border: 3px solid rgb(67, 163, 200);
+    margin-bottom: 10px
+  }
+
+  .agent-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px
+  }
+
+  .ability-icon {
+    width: 35px;  /* or whatever size you prefer */
+    height: 35px;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    border: 3px solid rgb(168, 48, 48);
+  }
+
+  .ability-details {
+    width: 950px;
+    overflow: hidden; /* hide excess text */
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+   }
+
+   .description-card, .role-card{
+    max-width: auto;
+    height: auto;
+  }
+
+  .agent-role, .role-description {
+    /* set a specific height, adjust as needed */
+    max-width: auto;
+    height: auto;
+    margin-top: 6px;
+ }
+
+ .agent-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+}
+
+@media (min-width: 1715px) {
+  .agent-card{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row; /* stack children vertically */
+    justify-content: space-evenly; /* space out the children */
+    align-items: center;
+  }
+
+  .agent-portait {
+    width: 400px;  /* or whatever size you prefer */
+    height: 800px;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    border: 3px solid rgb(67, 163, 200);
+    margin-bottom: 10px
+  }
+
+  .agent-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px
+  }
+
+  .ability-icon {
+    width: 65px;  /* or whatever size you prefer */
+    height: 65px;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    border: 3px solid rgb(168, 48, 48);
+  }
+
+  .ability-details {
+    width: 1000px;
+    overflow: hidden; /* hide excess text */
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+   }
+
+   .description-card, .role-card{
+    max-width: auto;
+    height: auto;
+  }
+
+  .agent-role, .role-description {
+    /* set a specific height, adjust as needed */
+    max-width: auto;
+    height: auto;
+    margin-top: 6px;
+ }
+
+ .agent-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+}
+
+@media (min-width: 1920px) {
+  .agent-card{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row; /* stack children vertically */
+    justify-content: space-evenly; /* space out the children */
+    align-items: center;
+    
+  }
+
+  .agent-portait {
+    width: 500px;  /* or whatever size you prefer */
+    height: 900px;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    border: 3px solid rgb(67, 163, 200);
+    margin-bottom: 10px
+  }
+
+  .agent-details {
+    align-content: center;
+    border-radius: 30px;
+    margin-left: 20px
+  }
+
+  .ability-icon {
+    width: 65px;  /* or whatever size you prefer */
+    height: 65px;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    border: 3px solid rgb(168, 48, 48);
+  }
+
+  .ability-details {
+    width: 1400px;
+    overflow: hidden; /* hide excess text */
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px
+   }
+
+   .description-card, .role-card{
+    max-width: 700px;
+    height: auto;
+  }
+
+  .agent-role, .role-description {
+    /* set a specific height, adjust as needed */
+    max-width: 700px;
+    height: auto;
+    margin-top: 6px;
+ }
 }
