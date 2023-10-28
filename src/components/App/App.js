@@ -12,9 +12,6 @@ function App(){
   const [filteredAgents, setFilteredAgents] = useState([]);
   const [savedAgents, setSavedAgents] = useState([]);
 
-
-
-  
   useEffect(() => {
     const handleErrors = (response) => {
       if (!response.ok) {
@@ -77,6 +74,7 @@ return (
     <Link to="/" className="home-button">Home</Link>
     <Link to="/saved" className="favorites-button">Favorites</Link>
     </div>
+    <div class='top-line'></div>
 
 
       {/* Render the Form only if we're on the home route */}

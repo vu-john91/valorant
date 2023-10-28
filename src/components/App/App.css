@@ -44,8 +44,10 @@ h1, p {
 
 .heading {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
+
+
 
 /* in your CSS file */
 .home-button, .favorites-button {
@@ -81,5 +83,6 @@ h1, p {
 
 .home {
   display: flex;
+  justify-content: center;
   margin: 20px
 }
