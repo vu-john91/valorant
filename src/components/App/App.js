@@ -67,14 +67,13 @@ return (
     <div class='heading'>
       <div>
         <h1>Valorant Agents</h1>
-        <h2>Choose an Agent</h2>
       </div>
     </div>
     <div class='home'>
     <Link to="/" className="home-button">Home</Link>
     <Link to="/saved" className="favorites-button">Favorites</Link>
     </div>
-    <div class='top-line'></div>
+    
 
 
       {/* Render the Form only if we're on the home route */}
@@ -82,12 +81,18 @@ return (
       <Routes>
       <Route path="/" element={
         <>
+          <h2 class='choose'>Choose an Agent</h2>
           <Form addIdea={filterAgentsByRole} />
           <Ideas ideas={filteredAgents} />
         </>
       }/>
         <Route path="/details/:agentId" element={<AgentDetails addToSavedList={addToSavedList} />} />
-        <Route path="/saved" element={<Ideas savedAgents={savedAgents} />} />
+        <Route path="/saved" element={
+        <>
+        <h2 class='choose'>Choose an Agent</h2> 
+        <Ideas savedAgents={savedAgents} />
+        </>
+      } />
 
       </Routes>
     </main>

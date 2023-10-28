@@ -42,6 +42,14 @@ h1, p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+h1 {
+  font-size: 50px;
+}
+
+.choose {
+  font-size: 35px;
+}
+
 .heading {
   display: flex;
   justify-content: center;
