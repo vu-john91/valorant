@@ -11,6 +11,12 @@
   }
 }
 
+.line {
+  width: 3px;
+  height: 1000px;  /* You can adjust this value as needed */
+  background-color: rgb(67, 163, 200);
+  margin: 0 20px;
+}
 
 .agentName {
   box-sizing: border-box;
@@ -35,6 +41,7 @@
     justify-content: space-evenly; /* space out the children */
     align-items: center;
     height: 100%;
+    margin-bottom: 50px;
     animation: fadeIn 0.3s forwards;
   }
 
@@ -57,7 +64,7 @@
     object-fit: cover; /* ensures the image covers the area without distortion */
     object-position: center; /* centers the image within the frame */
     border-radius: 30px;
-    border: 3px solid rgb(67, 163, 200);
+    border: 3px solid rgb(168, 48, 48);
     margin-right: 10px;
     margin-top: 10px;
   }
@@ -153,7 +160,6 @@ h2 {
     object-fit: cover; /* ensures the image covers the area without distortion */
     object-position: center; /* centers the image within the frame */
     border-radius: 30px;
-    border: 3px solid rgb(67, 163, 200);
     margin-bottom: 10px
   }
 
@@ -196,6 +202,13 @@ h2 {
   flex-direction: column;
   align-items: center;
  }
+
+ .line {
+  width: 320px;
+  height: 3px;  /* You can adjust this value as needed */
+  background-color: rgb(67, 163, 200);
+  margin:20px;
+}
 }
 
 @media (min-width: 820px) {
@@ -212,7 +225,6 @@ h2 {
     object-fit: cover; /* ensures the image covers the area without distortion */
     object-position: center; /* centers the image within the frame */
     border-radius: 30px;
-    border: 3px solid rgb(67, 163, 200);
     margin-bottom: 10px
   }
 
@@ -256,6 +268,13 @@ h2 {
   align-items: center;
  }
 
+ .line {
+  width: 700px;
+  height: 3px;  /* You can adjust this value as needed */
+  background-color: rgb(67, 163, 200);
+  margin: 20px;
+}
+
 }
 
 @media (min-width: 1180px) {
@@ -274,7 +293,6 @@ h2 {
     object-fit: cover; /* ensures the image covers the area without distortion */
     object-position: center; /* centers the image within the frame */
     border-radius: 30px;
-    border: 3px solid rgb(67, 163, 200);
     margin-bottom: 10px
   }
 
@@ -320,6 +338,13 @@ h2 {
   align-items: center;
  }
 
+ .line {
+  width: 1000px;
+  height: 3px;  /* You can adjust this value as needed */
+  background-color: rgb(67, 163, 200);
+  margin:20px;
+}
+
 }
 
 @media (min-width: 1715px) {
@@ -338,7 +363,6 @@ h2 {
     object-fit: cover; /* ensures the image covers the area without distortion */
     object-position: center; /* centers the image within the frame */
     border-radius: 30px;
-    border: 3px solid rgb(67, 163, 200);
     margin-bottom: 10px
   }
 
@@ -384,6 +408,13 @@ h2 {
   align-items: center;
  }
 
+ .line {
+  width: 3px;
+  height: 800px;  /* You can adjust this value as needed */
+  background-color: rgb(67, 163, 200);
+  margin:0 20px;
+}
+
 }
 
 @media (min-width: 1920px) {
@@ -403,7 +434,6 @@ h2 {
     object-fit: cover; /* ensures the image covers the area without distortion */
     object-position: center; /* centers the image within the frame */
     border-radius: 30px;
-    border: 3px solid rgb(67, 163, 200);
     margin-bottom: 10px
   }
 
@@ -441,4 +471,11 @@ h2 {
     height: auto;
     margin-top: 6px;
  }
+
+ .line {
+  width: 3px;
+  height: 900px;  /* You can adjust this value as needed */
+  background-color: rgb(67, 163, 200);
+  margin:0 20px;
+}
 }

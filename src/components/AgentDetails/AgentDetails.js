@@ -49,6 +49,7 @@ function AgentDetails({ addToSavedList }) {
             <button onClick={() => addToSavedList(agentDetails)}>Save to Favorites</button>
             <img class='agent-portait' src={agentDetails.fullPortrait} alt={agentDetails.displayName} />
           </div>
+          <div class='line'></div>
           <div class='agent-details'>
             <h2>Role: </h2>
               <div class='role-card'>
