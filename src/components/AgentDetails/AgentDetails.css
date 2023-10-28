@@ -211,6 +211,75 @@ h2 {
 }
 }
 
+@media (min-width: 768px) {
+  .agent-card{
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .agent-portait {
+    width: 370px;  /* or whatever size you prefer */
+    height: 500px;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    margin-bottom: 10px
+  }
+
+  .agent-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ability-icon {
+    width: 65px;  /* or whatever size you prefer */
+    height: 65px;
+    object-fit: cover; /* ensures the image covers the area without distortion */
+    object-position: center; /* centers the image within the frame */
+    border-radius: 30px;
+    border: 3px solid rgb(168, 48, 48);
+  }
+
+  .ability-details {
+    width: 670px;
+    display: flex;
+    flex-direction: column;
+    
+   }
+
+   .abilities-card {
+    width: 670px;
+   }
+   .description-card, .role-card{
+    max-width: 700px;
+    height: auto;
+  }
+
+  .agent-role, .role-description {
+    /* set a specific height, adjust as needed */
+    max-width: 700px;
+    height: auto;
+    margin-top: 6px;
+ }
+
+ .agent-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .line {
+  width: 650px;
+  height: 3px;  /* You can adjust this value as needed */
+  background-color: rgb(67, 163, 200);
+  margin: 20px;
+}
+
+}
+
 @media (min-width: 820px) {
   .agent-card{
     width: 800px;
